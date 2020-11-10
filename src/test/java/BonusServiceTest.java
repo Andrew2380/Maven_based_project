@@ -4,13 +4,14 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class BonusServiceTest {
 
+    private boolean registered;
+
     @Test
     void shouldCalculateNotRegisteredAndUnderLimit() {
         BonusService service = new BonusService();
 
 
         long amount = 100_00;
-        boolean registered = false;
         long expected = 1;
 
 
@@ -25,7 +26,6 @@ class BonusServiceTest {
 
 
         long amount = 50_100_00;
-        boolean registered = false;
         long expected = 500;
 
 

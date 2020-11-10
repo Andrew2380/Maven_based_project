@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ru.netology</groupId>
-    <artifactId>untitled8</artifactId>
+    <artifactId>Maven_based_project</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -23,5 +23,18 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.0.0-M5</version>
+                <configuration>
+                    <failIfNoTests>false</failIfNoTests>
+                </configuration>
+        </plugin>
+        </plugins>
+    </build>
 
 </project>
